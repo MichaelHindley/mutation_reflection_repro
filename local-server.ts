@@ -1,14 +1,14 @@
 import 'reflect-metadata'
 import { ApolloServer } from 'apollo-server'
 import { buildSchema } from 'type-graphql'
-import ProductResolver from './resolvers/recipe-resolver'
+import RecipeResolver from './resolvers/recipe-resolver'
 
 const PORT = process.env.PORT || 4000
 
 async function bootstrap() {
 
   const schema = await buildSchema({
-    resolvers: [ProductResolver],
+    resolvers: [RecipeResolver],
   })
 
   const server = new ApolloServer({
