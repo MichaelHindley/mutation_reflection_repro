@@ -1,0 +1,25 @@
+{
+  "name": "mutation-reflect-bug",
+  "version": "0.1.0",
+  "description": "",
+  "main": "local-server.ts",
+  "scripts": {
+    "start-dev": "ts-node local-server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "author": "michael@hindley.se",
+  "license": "",
+  "dependencies": {
+    "apollo-server": "2.15.1",
+    "class-validator": "0.12.2",
+    "graphql": "15.3.0",
+    "type-graphql": "1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "reflect-metadata": "0.1.13",
+    "typescript": "3.9.7",
+    "ts-node": "8.10.2",
+    "source-map-support": "^0.5.16"
+  }
+}
